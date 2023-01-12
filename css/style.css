@@ -1,0 +1,360 @@
+                  /*GENERAL*/  
+
+body {
+    font-family: "raleway",sans-serif;
+}                               
+#etoilebleu {
+    color: blue;
+}      
+#etoilegrise {
+    color: Grey;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+    /*LOGO ET NAV*/
+
+.imagebooki {
+    text-align: left;
+    width: 61.09px;
+    height: 19px;
+    margin: 44px 0 0 55px;
+}
+nav {
+    float: right;
+}
+nav div {
+    display: inline-block;
+}
+.Hébergements:hover {
+    border-top: rgba(0, 101, 252, 1) 1px solid;
+}
+.Hébergements:hover {
+    padding: 48px 67px 0 0;
+    width: 113px;
+    height: 19px;
+}
+.Activités:hover {
+    border-top: rgba(0, 101, 252, 1) 1px solid;
+}
+.Activités {
+    padding: 48px 77px 0 0;
+    width: 63px;
+    height: 19;
+}
+
+
+                      /*TITRE*/
+.premiertitre {
+    margin: 63px 0 0 55px;
+    width: 575px;
+    height: 26px;
+}
+.premiertexte {
+    margin: 8px 0 0 55px;
+}
+                        /*FORMULAIRE*/
+.iconelocalisation {
+    border-radius: 15px 0px 0px 15px;
+}
+form {
+    border-radius: 7px 7px 7px 7px;
+    margin: 20px 0 0 55px;
+    
+}
+label {
+    background: #f2f2f2;
+    width: 50px;
+    height: 49px;
+    padding: 15px;
+}
+input {
+width: 180px;
+height: 38px;
+border: 1px solid grey;
+margin: 0 0 0 0;
+}
+button {
+    border: none;
+    color: white;
+    background-color: rgba(0, 101, 252, 1);
+    padding: 14px 16px 14px 16px;
+    border-radius: 0 15px 15px 0;
+    width: 100px;
+    cursor: pointer;
+}
+#loupe {
+    color: white;
+}
+
+                                /*FILTRES*/ 
+.filtres {
+    margin: 46px 0 0 62px;
+    display: flex;
+    align-items: center;
+}
+
+.i1 , #i1 {
+    border: 3px solid black;
+    border-radius: 20px;
+    margin: 0 0 0 50px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+}
+
+.i1:hover, .animaux:hover {
+    background: #DEEBFF;
+}
+
+#icon-i {
+    border: 1px solid rgba(217, 217, 217, 1);
+    border-radius: 100px;
+    text-align: center;
+    width: 15px;
+    margin: 0 20px 0 60px;
+}
+#iconefiltresbleu {
+    color: blue;
+    margin: 0 10px 0 10px;
+}
+                               /*hebergements a marseille*/
+.titreHébergementsàMarseille {
+    margin: 42px 0 23px 40px;
+}
+
+.flexaround {
+    display: flex;
+}
+
+.backgris {
+    background-color: rgba(242, 242, 242, 1);
+}
+.titredelhoteletletexte {
+    margin: 0 0 9px 16px;
+}
+
+.sizehebergements {
+flex: 2;
+width: 880px;
+height: 626px;
+border-radius: 20px;
+margin: 0 40px 0 50px; 
+}
+
+.sizepopulaires {
+flex: 1;
+height: 626px;
+width: 420px;
+border-radius: 20px;
+margin: 0 50px 0 0;
+
+}
+.blocimage1 {
+background: #FFFFFF;
+border-radius: 20px;
+}
+.blocimage2 {
+    background-color: white;
+    border-radius: 20px;
+}
+.blocimage3 {
+    background-color: white;
+    border-radius: 20px;
+}
+                 /*BLOC2 IMAGES HORIZONTALES*/
+.blocimage4 {
+    background: #FFFFFF;
+    border-radius: 20px;
+}
+.blocimage5 {
+    background-color: white;
+    border-radius: 20px;
+}
+.blocimage6 {
+    background-color: white;
+    border-radius: 20px;
+}
+/*toute les etoiles hebergements a marseille marge*/
+.divetoile {
+margin-left: 15px;
+}
+
+.bloc1 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.bloc2 {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+.cubehebergements {
+    width: 246px; 
+height: 199px;
+margin: 0px 0px 0px 0px; 
+}
+
+.imghebergements1 {
+    object-fit: cover;
+    border: 5px solid #FFFFFF;
+    width: 246px;
+    height: 124px;
+    border-radius: 20px 20px 0px 0px;
+
+}
+.imghebergements2 {
+object-fit: cover;
+border: 5px solid #FFFFFF;
+    width: 246px;
+    height: 124px;
+    border: 5px solid white;
+    border-radius: 20px 20px 0px 0px;
+ 
+
+}
+
+.imghebergements3 {
+    object-fit: cover;
+    border: 5px solid #FFFFFF;
+    width: 246px;
+    height: 124px;
+    border-radius: 20px 20px 0px 0px;
+  
+}
+
+.imghebergements4 {
+    object-fit: cover;
+    border: 5px solid #FFFFFF;
+    width: 246px;
+    height: 124px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.imghebergements5 {
+    object-fit: cover;
+    border: 5px solid #FFFFFF;
+    width: 246px;
+    height: 124px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.imghebergements6 {
+    object-fit: cover;
+    border: 5px solid #FFFFFF;
+    width: 246px;
+    height: 124px;
+    border-radius: 20px 20px 0px 0px;
+}
+.afficherplus {
+margin: 40px 0 0 44px;
+}
+                   /*LES PLUS POPULAIRES*/
+                   
+.titrelespluspopulaires {
+    margin: 41px 0 26px 37px;
+}
+.bloc3 {
+margin-left: 110px;
+}
+.blocimage7 {
+    background: #FFFFFF;
+    border-radius: 20px; 
+    width: 343px;
+    height: 144px;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.blocimage8 {
+    background: #FFFFFF;
+    border-radius: 20px; 
+    Width: 343px;
+    Height: 144px;
+    margin-bottom: 30px;
+}
+.blocimage9 {
+    background: #FFFFFF;
+    border-radius: 20px; 
+    width: 343px;
+    height: 144px;
+  
+}
+.imgpopulaires {
+    width: 137px;
+    height: 144px;
+    border: 5px solid #FFFFFF;
+border-radius: 20px 0px 0px 20px;
+object-fit: cover;
+}
+
+#iconelespluspopulaires {
+    margin: 0 0 0 118px;
+    color: blue;
+}
+.cubedetailpopulaires1 {
+    float: right;
+    margin-right: 30px;
+}
+.cubedetailpopulaires2 {
+    float: right;
+    margin-right: 15px;
+
+}
+.cubedetailpopulaires3 {
+    float: right;
+    margin-right: 30px;
+}
+.divetoilepopulaires {
+    margin: 44px 0 0 0;
+}
+.divetoilepopulaires3 {
+    margin-top: 65px;
+}
+
+                   /*ACTIVITES A MARSEILLE*/ 
+
+
+.les4imagesactivitesamarseille {
+    display: flex;
+    justify-content: space-around;
+}
+.titreActivitésàMarseille {
+    margin: 60px 0 18.47px 50px;
+    width: 212px;
+    height: 30px;
+}
+.imagesactivites {
+    width: 302px;
+    height: 389px;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+}
+
+
+                    /*FOOTER*/
+footer {
+    background-color:rgba(242, 242, 242, 1);
+    margin: 61px 53px 0 48px;
+    height: 225px;
+}
+.apropos {
+    margin-top: 35px;
+}
+.noshébergements {
+    margin-top: 35px;
+}
+.Assistance {
+    margin-top: 35px;
+}
+.aproposnoshébergementsAssistance {
+    justify-content: space-around;
+    display: flex;
+}
+
