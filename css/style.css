@@ -1,14 +1,19 @@
                   /*GENERAL*/  
-
+:root {
+    --header-padding-top: 35px;
+    --main-blue-color: #0065fc;
+    --main-bluelight-color: #DEEBFF;
+    --main-grey-color: #D9D9D9;
+}
 body {
     font-family: "raleway",sans-serif;
-    margin:  44px 50px 0 50px;
+    margin:  0 50px 0 50px;
 }                               
 #etoilebleu {
-    color: blue;
+    color: var(--main-blue-color);
 }      
 #etoilegrise {
-    color: Grey;
+    color: var(--main-grey-color);
 }
 
 a {
@@ -24,65 +29,70 @@ a {
     justify-content: space-between;
 }
 .imagebooki {
-    width: 61.09px;
+    width: 4%;
+    padding-top: var(--header-padding-top);
+
 }
 .hebergementsetactivites {
     display: flex;
+    justify-content: space-around;
+    width: 26%;
+}
+.Hebergements, .Activites {
+    border-top: 2px solid white;
+    padding-top: var(--header-padding-top);
 } 
 .Hebergements:hover {
-    border-top: 3px solid blue; 
+    border-top: 2px solid var(--main-blue-color)
 }
 .Activites:hover {
-    border-top: 3px solid blue; 
+    border-top: 2px solid var(--main-blue-color); 
 }
 .link {
-    color: blue;
-    margin-top: 30px;
+    color: var(--main-blue-color);
 }
 
 
 
                      /*TITRE*/
 .premiertitre {
-    margin: 63px 0 0 0;
-    width: 29%;
-    height: 26px;
+    margin-top: 63px;
+    width: 45%;
 }
 .premiertexte {
-    margin: 8px 0 0 0;
+    margin-top: 8px;
 }
                         /*FORMULAIRE*/
-.iconelocalisation {
-    border-radius: 15px 0px 0px 15px;
-}
-form {
+
+.form {
+    display: flex;
+    margin-top: 20px;
     border-radius: 7px 7px 7px 7px;
-    margin: 20px 0 0 0;
-    
 }
-label {
+.label {
+    border-radius: 15px 0px 0px 15px; 
     background: #f2f2f2;
-    width: 50px;
-    height: 49px;
+    width: 0.5%;
+    height: 13px;
     padding: 15px;
 }
-input {
-    width: 180px;
+
+.input {
+    width: 12%;
     height: 38px;
     border: 1px solid grey;
 }
 button {
     border: none;
     color: white;
-    background-color: rgba(0, 101, 252, 1);
- 
+    background-color:var(--main-blue-color);
     border-radius: 0 15px 15px 0;
-    width: 100px; 
+    width: 5%; 
     height: 42px;
     cursor: pointer;
 }
 #loupe {
-    color: white;
+    color: var(--main-blue-color);
 }
 
                                 /*FILTRES*/ 
@@ -90,6 +100,7 @@ button {
     margin-top: 46px;
     display: flex;
     align-items: center;
+    width: 49%;
 }
 .economiqueetfamilial {
     display: flex;
@@ -111,18 +122,18 @@ button {
 }
 
 .i1:hover, .animaux:hover {
-    background: #DEEBFF;
+    background: var(--main-grey-color);
 }
 
 #icon-i {
-    border: 1px solid rgba(217, 217, 217, 1);
+    border: 1px solid var(--main-grey-color);
     border-radius: 100px;
     text-align: center;
-    width: 15px;
+    width: 1%;
     margin-right: 20px;
 }
 #iconefiltresbleu {
-    color: blue;
+    color: var(--main-blue-color);
     margin: 0 10px 0 10px;
 }
 
@@ -318,16 +329,42 @@ footer {
                     /*TABLETTE*/
 
 @media screen and (max-width: 992px) {
-    .flexaround {
-        display: flex;
-        flex-direction: column;
+    .imagebooki {
+        width: 61.09px;
     }
     .premiertitre {
         width: 59%;
     }  
+    .input {
+        width: 28%;
+        height: 38px;
+        border: 1px solid grey;
+    }
+    .button {
+        width: 10%;
+    }
+    .filtres {
+        width: 98%;
+    }
+    .flexaround {
+        display: flex;
+        flex-direction: column;
+    }
     .sizehebergements {
         width: 880px;
         height: 626px;
+    }
+    .sizepopulaires {
+        margin-top: 50px;
+        width: 883px;
+        height: 278px;
+
+    }
+    .titreeticonelespluspopulaires {
+        display: flex;
+        justify-content: space-between;
+        width: 94%;
+        margin: 0 0 20px 28px;
     }  
     .bloc3 {
         display: flex;
@@ -337,19 +374,13 @@ footer {
     }
     .blocimage7, .blocimage8, .blocimage9 {
         display: flex;
-        width: 252px;
+        width: 28%;
     }
     .divetoilepopulaires {
         margin: 0;
     }
     .divetoilepopulaires3 {
         margin-top: 34px;
-    }
-    .sizepopulaires {
-        margin-top: 50px;
-        width: 883px;
-        height: 278px;
-
     }
     .imgpopulaires {
         width: 106px; 
@@ -359,13 +390,63 @@ footer {
     .imagesactivites {
         width: 182px;
         height: 267px;
-          
+    }
+    .afficherplus {
+        margin: 40px 0 46px 44px;
     }
 
 }
                     /*MOBILE*/
 
+ @media screen and (max-width: 412px) {
+    body {
+        margin: 0 10px 0 10px;
+    }
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        align-items: center;    
+    }
+    .hebergementsetactivites {
+        width: 143%
+    }
+    .Hebergements, .Activites {
+        border-bottom: 5px solid white;
+       
+    }
+    .Hebergements:hover, .Activites:hover {
+        border-bottom: 2px solid var(--main-blue-color);
+        border-top: none;
+        margin-bottom: 23px;
+    }
+    .premiertitre {
+        width: 69%;
+    }
+    .label {
+        width: 2%;
+    }
+    .input {
+        width: 75%;
+    }
+    .button {
+        color: var(--main-blue-color);
+    }
+    #loupe {
+        color: white;
+    }
+} 
+    
+/*
 @media screen and (max-width: 412px) {
+    body {
+        margin: 20px 20px 0 20px;
+        height: 3950px;
+        width: 467px;
+    }
+    .imagebooki {
+        display: flex;
+        align-items: center;
+    }
     .navigation {
         display: flex;
         flex-direction: column;
@@ -380,7 +461,7 @@ footer {
         width: 78%;
         margin-top: 10%
     }
-    form {
+    .form {
        width: 108%;
     }
     .filtres {
@@ -390,7 +471,7 @@ footer {
         width: 132px;
         margin: 0;
     }
-
+    
     .sizehebergements {
        width: 420px;
        height: 625px;
@@ -412,7 +493,9 @@ footer {
         height: 580px;
     }
     .bloc3 {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     .titreeticonelespluspopulaires {
         justify-content: space-between;
