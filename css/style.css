@@ -6,9 +6,11 @@
     --main-bluelight-color: #DEEBFF;
     --main-grey-color: #D9D9D9;
     --body-margin-left: 5px;
+    --box-shadow: 0px 10px 0px 0px silver;
+    --etoilebleu-color: #0065fc;
 }
 body {
-    font-family: "raleway",sans-serif;
+    font-family: "raleway" ,sans-serif;
     margin:  0 50px 0 50px;
 }                               
 #etoilebleu {
@@ -25,7 +27,9 @@ a {
 
                     /*HEADER*/ 
                     
-
+@media screen and (max-width: 1400px) and (min-width: 992px) {
+    
+}
 .navigation {
     display: flex;
     justify-content: space-between;
@@ -48,9 +52,11 @@ a {
     border-top: 2px solid var(--main-blue-color)
 }
 .link {
+    color: black;
+}
+.link:hover {
     color: var(--main-blue-color);
 }
-
 
 
                      /*TITRE*/
@@ -84,14 +90,14 @@ a {
 button {
     border: none;
     color: white;
-    background-color:var(--main-blue-color);
+    background-color: var(--main-blue-color);
     border-radius: 0 15px 15px 0;
     width: 5%; 
     height: 42px;
     cursor: pointer;
 }
 #loupe {
-    color: var(--main-blue-color);
+    color: white;
 }
 
                                 /*FILTRES*/ 
@@ -108,9 +114,9 @@ button {
     display: flex;
 }
 .i1 , #i1 {
-    border: 3px solid black;
+    border: 2px solid var(--main-grey-color);
     border-radius: 20px;
-    padding: 10px;
+    padding: 8px;
     cursor: pointer;
     margin-left: 52px;
 }
@@ -121,7 +127,7 @@ button {
 }
 
 .i1:hover, .animaux:hover {
-    background: var(--main-grey-color);
+    background: var(--main-bluelight-color);
 }
 
 #icon-i {
@@ -130,6 +136,7 @@ button {
     text-align: center;
     width: 1%;
     margin-right: 20px;
+    color: var(--main-blue-color);
 }
 #iconefiltresbleu {
     color: var(--main-blue-color);
@@ -162,36 +169,14 @@ button {
     display: flex;
     justify-content: space-around;
 }
-.blocimage1 {
+.blocimagehebergements {
     background: #FFFFFF;
     border-radius: 20px;
+    box-shadow: var(--box-shadow);
 }
-.blocimage2 {
-    background-color: white;
-    border-radius: 20px;
-}
-.blocimage3 {
-    background-color: white;
-    border-radius: 20px;
-}
-                 /*BLOC2 IMAGES HORIZONTALES*/
-.blocimage4 {
-    background: #FFFFFF;
-    border-radius: 20px;
-}
-.blocimage5 {
-    background-color: white;
-    border-radius: 20px;
-}
-.blocimage6 {
-    background-color: white;
-    border-radius: 20px;
-}
-/*toute les etoiles hebergements a marseille marge*/
 .divetoile {
     margin-left: 15px;
 }
-
 .bloc2 {
     display: flex;
     justify-content: space-around;
@@ -259,8 +244,7 @@ button {
     height: 155px;
     margin-bottom: 30px;
     display: flex;
-    
-   
+    box-shadow: var(--box-shadow);
 }
 .blocimage8 {
     background: #FFFFFF;
@@ -269,7 +253,7 @@ button {
     height: 155px;
     margin-bottom: 30px;
     display: flex;
-    
+    box-shadow: var(--box-shadow);
 }
 .blocimage9 {
     background: #FFFFFF;
@@ -277,6 +261,7 @@ button {
     width: 343px;
     height: 155px;
     display: flex;
+    box-shadow: var(--box-shadow);
 }
 .imgpopulaires {
     width: 137px;
@@ -305,7 +290,14 @@ button {
     border-radius: 20px 20px 0 0;
     object-fit: cover;
 }
-
+.imagesVieux-Port, .imagesFortdepomegues, .imagesParcnationaldesCalanques, .imagesNotre-DamedelaGarde {
+    height: 440px;
+    box-shadow: var(--box-shadow);
+    border-radius: 0px 0px 20px 20px;
+}
+.cubedetailactivites {
+    margin-left: 15px;
+}
 
                     /*FOOTER*/
 footer {
@@ -343,6 +335,7 @@ footer {
     }
     .button {
         width: 10%;
+        color: white;
     }
     /*FILTRES*/
     .filtres {
@@ -401,7 +394,13 @@ footer {
     .afficherplus {
         margin: 40px 0 46px 44px;
     }
-
+    /*ACTIVITES A MARSEILLE*/
+    .imagesVieux-Port, .imagesFortdepomegues, .imagesParcnationaldesCalanques, .imagesNotre-DamedelaGarde {
+    height: 330px;
+    }
+    .imagesParcnationaldesCalanques, .imagesNotre-DamedelaGarde {
+        width: 21%;
+    }
 }
                                         /*MOBILE*/
 
@@ -452,10 +451,19 @@ footer {
         width: 75%;
     }
     .button {
-        color: var(--main-blue-color);
+        display: flex;
+        color: white;
+
     }
     #loupe {
+        margin-left: -28px;
+        display: flex;
+        align-items: center;
         color: white;
+        cursor: pointer;
+    }
+    .rechercher {
+        display: none;
     }
     /*FILTRES*/
     .filtres {
@@ -513,10 +521,11 @@ footer {
     .divetoilepopulaires3 {
         margin-top: 74px;
     }
-    .bloc1 {
-        display: flex;
-        flex-direction: column;
+    .blocimage9 {
+        margin-bottom: 30px;
     }
+    
+
     /*HEBERGEMENTS A MARSEILLE*/
     .sizehebergements {
         display: flex;
@@ -525,9 +534,17 @@ footer {
         width: 100%;
         background: white;
     }
+    .bloc1 {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: -30px;
+    }
     .imghebergements {
         width: 335px;
         height: 124px;
+    }
+    .blocimagehebergements {
+        margin-bottom: 15px;
     }
     .bloc2 {
         display: flex;
@@ -541,11 +558,17 @@ footer {
         margin-left: 35px;
     }
     .titreActivitesaMarseille {
-        margin-left: 40px;
+        margin-left: 10px;
+        width: 25%;
     }
     .les4imagesactivitesamarseille {
         display: flex;
         flex-direction: column;
+    }
+    .imagesVieux-Port, .imagesFortdepomegues, .imagesParcnationaldesCalanques, .imagesNotre-DamedelaGarde {
+        width: 89%;
+        height: 240px; 
+        margin-bottom: 25px;
     }
     .imagesactivites {
         Width: 334px;
