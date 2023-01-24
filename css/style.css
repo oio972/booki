@@ -1,9 +1,11 @@
                   /*GENERAL*/  
 :root {
     --header-padding-top: 35px;
+    --header-padding-bottom: 23px;
     --main-blue-color: #0065fc;
     --main-bluelight-color: #DEEBFF;
     --main-grey-color: #D9D9D9;
+    --body-margin-left: 5px;
 }
 body {
     font-family: "raleway",sans-serif;
@@ -42,11 +44,8 @@ a {
     border-top: 2px solid white;
     padding-top: var(--header-padding-top);
 } 
-.Hebergements:hover {
+.Hebergements:hover, .Activites:hover {
     border-top: 2px solid var(--main-blue-color)
-}
-.Activites:hover {
-    border-top: 2px solid var(--main-blue-color); 
 }
 .link {
     color: var(--main-blue-color);
@@ -310,7 +309,7 @@ button {
 
                     /*FOOTER*/
 footer {
-    background-color:rgba(242, 242, 242, 1);
+    background-color: #F2F2F2;
     margin-top: 61px;
 }
 .apropos {
@@ -329,23 +328,30 @@ footer {
                     /*TABLETTE*/
 
 @media screen and (max-width: 992px) {
+    /*HEADER*/
     .imagebooki {
         width: 61.09px;
     }
     .premiertitre {
         width: 59%;
-    }  
+    } 
+    /*FORMULAIRE*/ 
     .input {
         width: 28%;
         height: 38px;
-        border: 1px solid grey;
+        border: 1px solid var(--main-grey-color);
     }
     .button {
         width: 10%;
     }
+    /*FILTRES*/
     .filtres {
         width: 98%;
     }
+    .i1, #i1 {
+        margin-left: 34px;
+    }
+    /*HEBERGEMENTS A MARSEILLE*/
     .flexaround {
         display: flex;
         flex-direction: column;
@@ -376,6 +382,7 @@ footer {
         display: flex;
         width: 28%;
     }
+     /*LES PLUS POPULAIRES*/
     .divetoilepopulaires {
         margin: 0;
     }
@@ -396,11 +403,12 @@ footer {
     }
 
 }
-                    /*MOBILE*/
+                                        /*MOBILE*/
 
  @media screen and (max-width: 412px) {
+    /*HEADER*/
     body {
-        margin: 0 10px 0 10px;
+        margin: 0;
     }
     .navigation {
         display: flex;
@@ -408,19 +416,34 @@ footer {
         align-items: center;    
     }
     .hebergementsetactivites {
-        width: 143%
+        width: 115%;
     }
     .Hebergements, .Activites {
-        border-bottom: 5px solid white;
-       
+        border-bottom: 1px solid white;
+        padding-bottom: var(--header-padding-bottom);
     }
     .Hebergements:hover, .Activites:hover {
         border-bottom: 2px solid var(--main-blue-color);
         border-top: none;
-        margin-bottom: 23px;
+        color: var(--main-blue-color);
+    }
+    .link {
+        color: black;
+    }
+    .link:hover {
+        color: var(--main-blue-color);
     }
     .premiertitre {
-        width: 69%;
+        width: 66%;
+        margin-top: 30px;
+        margin-left: var(--body-margin-left)
+    }
+    .premiertexte {
+        margin-left: var(--body-margin-left)
+    }
+    /*FORMULAIRE*/
+    .form {
+        margin-left: var(--body-margin-left)
     }
     .label {
         width: 2%;
@@ -434,84 +457,106 @@ footer {
     #loupe {
         color: white;
     }
-} 
-    
-/*
-@media screen and (max-width: 412px) {
-    body {
-        margin: 20px 20px 0 20px;
-        height: 3950px;
-        width: 467px;
-    }
-    .imagebooki {
-        display: flex;
-        align-items: center;
-    }
-    .navigation {
-        display: flex;
-        flex-direction: column;
-    }
-    .hebergementsetactivites {
-        justify-content: space-between;
-    }
-    .premiertitre {
-        width: 86%;
-    }
-    .premiertexte {
-        width: 78%;
-        margin-top: 10%
-    }
-    .form {
-       width: 108%;
-    }
+    /*FILTRES*/
     .filtres {
         display: block;
     }
-    .i1, #i1 {
-        width: 132px;
-        margin: 0;
-    }
-    
-    .sizehebergements {
-       width: 420px;
-       height: 625px;
-    }
-    .bloc1 {
-        display: block;
-    }
-    .blocimage1 {
+    .economiqueetfamilial {
         display: flex;
-        width: 334px;
-        height: 144px;
+        justify-content: space-around;
+        width: 78%;
     }
-
-    .bloc2 {
-        display: block;
+    .romantiqueetanimauxautorises {
+        display: flex;
+        justify-content: space-around;
+    }
+    .i1, #i1 {
+        margin: 0;
+        margin-bottom: 20px;
+    } 
+    .titrefiltres {
+        margin: var(--body-margin-left);
+        margin-bottom: 20px;
+    }
+    #icon-i {
+        margin: var(--body-margin-left);
+    }
+    .texteinformation {
+        margin-left: 10px;
+        width: 72%;
+    }
+    /*LES PLUS POPULAIRES*/
+    .flexaround {
+        display: flex;
+        flex-direction: column-reverse;
     }
     .sizepopulaires {
-        width: 375px;
-        height: 580px;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+    .titreeticonelespluspopulaires {
+        width: 90%;
     }
     .bloc3 {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .titreeticonelespluspopulaires {
-        justify-content: space-between;
-        width: 96%;
+    .blocimage7, .blocimage8, .blocimage9 {
+        width: 74%;
+    }
+    .divetoilepopulaires {
+        margin-top: 55px;
+    }
+    .divetoilepopulaires3 {
+        margin-top: 74px;
+    }
+    .bloc1 {
+        display: flex;
+        flex-direction: column;
+    }
+    /*HEBERGEMENTS A MARSEILLE*/
+    .sizehebergements {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        background: white;
+    }
+    .imghebergements {
+        width: 335px;
+        height: 124px;
+    }
+    .bloc2 {
+        display: flex;
+        flex-direction: column;
+    }
+    .afficherplus {
+        display: none;
+    }
+    /*ACTIVITES A MARSEILLE*/
+    .cardActivitesaMarseille {
+        margin-left: 35px;
+    }
+    .titreActivitesaMarseille {
+        margin-left: 40px;
     }
     .les4imagesactivitesamarseille {
-        display: block;
+        display: flex;
+        flex-direction: column;
     }
     .imagesactivites {
-        width: 334px;
+        Width: 334px;
         height: 190px;
-    }
-    .aproposnoshebergementsAssistance {
-        display: block;
-        width: 377px;
-         height: 501px;
-    }
         
-}
+    }
+    /*FOOTER*/
+    .aproposnoshebergementsAssistance {
+        display: flex;
+        flex-direction: column;
+        margin-left: 30px;
+    }
+
+} 
