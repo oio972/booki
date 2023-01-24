@@ -7,19 +7,11 @@
     --main-grey-color: #D9D9D9;
     --body-margin-left: 5px;
     --box-shadow: 0px 10px 0px 0px silver;
-    --etoilebleu-color: #0065fc;
 }
 body {
     font-family: "raleway" ,sans-serif;
     margin:  0 50px 0 50px;
-}                               
-#etoilebleu {
-    color: var(--main-blue-color);
-}      
-#etoilegrise {
-    color: var(--main-grey-color);
-}
-
+}                                   
 a {
     text-decoration: none;
 }
@@ -138,7 +130,7 @@ button {
     margin-right: 20px;
     color: var(--main-blue-color);
 }
-#iconefiltresbleu {
+#iconefiltresbleu1, #iconefiltresbleu2, #iconefiltresbleu3, #iconefiltresbleu4 {
     color: var(--main-blue-color);
     margin: 0 10px 0 10px;
 }
@@ -176,6 +168,54 @@ button {
 }
 .divetoile {
     margin-left: 15px;
+}
+#etoilebleu1, #etoilebleu2, #etoilebleu3 {
+    color: var(--main-blue-color);
+}
+#etoilebleu4, #etoilebleu5, #etoilebleu6 {
+    color: var(--main-blue-color);
+}
+#etoilebleu7, #etoilebleu8, #etoilebleu9 {
+    color: var(--main-blue-color);
+}
+#etoilebleu10, #etoilebleu11, #etoilebleu12 {
+    color: var(--main-blue-color);
+}
+#etoilebleu13, #etoilebleu14, #etoilebleu15 {
+    color: var(--main-blue-color);
+}
+#etoilebleu16, #etoilebleu17, #etoilebleu18 { 
+    color: var(--main-blue-color);
+}
+#etoilebleu19, #etoilebleu20, #etoilebleu21 {
+    color: var(--main-blue-color);
+}
+#etoilebleu19, #etoilebleu20, #etoilebleu21 {
+    color: var(--main-blue-color);
+} 
+#etoilebleu22, #etoilebleu23, #etoilebleu24 {
+    color: var(--main-blue-color);
+}  
+#etoilebleu25, #etoilebleu26, #etoilebleu27 {
+    color: var(--main-blue-color);
+} 
+#etoilebleu28, #etoilebleu29, #etoilebleu30 {
+    color: var(--main-blue-color);
+}
+#etoilebleu31, #etoilebleu32, #etoilebleu33 {
+    color: var(--main-blue-color);
+}
+#etoilebleu34, #etoilebleu35, #etoilebleu36 {
+    color: var(--main-blue-color);
+}
+#etoilegrise1, #etoilegrise2, #etoilegrise3 {
+    color: var(--main-grey-color);
+}
+#etoilegrise4, #etoilegrise5, #etoilegrise6 {
+    color: var(--main-grey-color);
+}
+#etoilegrise7, #etoilegrise8, #etoilegrise9 {
+    color: var(--main-grey-color);
 }
 .bloc2 {
     display: flex;
@@ -452,8 +492,7 @@ footer {
     }
     .button {
         display: flex;
-        color: white;
-
+        color: transparent;
     }
     #loupe {
         margin-left: -28px;
