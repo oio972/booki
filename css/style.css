@@ -1,5 +1,5 @@
-                  /*GENERAL*/  
-:root {
+    /*GENERAL*/  
+    :root {
     --header-padding-top: 35px;
     --header-padding-bottom: 23px;
     --main-blue-color: #0065fc;
@@ -51,7 +51,7 @@ a {
 }
 
 
-                     /*TITRE*/
+                        /*TITRE*/
 .premiertitre {
     margin-top: 63px;
     width: 45%;
@@ -164,7 +164,7 @@ button {
 .blocimagehebergements {
     background: #FFFFFF;
     border-radius: 20px;
-    box-shadow: var(--box-shadow);
+    box-shadow: 0px 11px 22px 0px silver;
 }
 .divetoile {
     margin-left: 15px;
@@ -238,7 +238,7 @@ button {
 .afficherplus {
     margin: 40px 0 0 44px;
 }
-                   /*LES PLUS POPULAIRES*/
+                    /*LES PLUS POPULAIRES*/
 
 .sizepopulaires {
     flex: 1;
@@ -246,7 +246,7 @@ button {
     width: 420px;            
     border-radius: 20px;
     margin: 0 50px 0 0;
-          
+            
 }                   
 .bloc3 {
     display: flex;
@@ -254,7 +254,7 @@ button {
     align-items: center;
 }
 
-  .titreeticonelespluspopulaires {
+.titreeticonelespluspopulaires {
     display: flex;
     justify-content: space-around;
     width: 90%;
@@ -277,23 +277,14 @@ button {
 .divetoilepopulaires3 {
     margin-top: 64px;
 }
-.blocimage7 {
+.blocimage7, .blocimage8 {
     background: #FFFFFF;
     border-radius: 20px; 
     width: 343px;
     height: 155px;
     margin-bottom: 30px;
     display: flex;
-    box-shadow: var(--box-shadow);
-}
-.blocimage8 {
-    background: #FFFFFF;
-    border-radius: 20px; 
-    Width: 343px;
-    height: 155px;
-    margin-bottom: 30px;
-    display: flex;
-    box-shadow: var(--box-shadow);
+    box-shadow: 0px 11px 22px 0px silver;
 }
 .blocimage9 {
     background: #FFFFFF;
@@ -301,7 +292,7 @@ button {
     width: 343px;
     height: 155px;
     display: flex;
-    box-shadow: var(--box-shadow);
+    box-shadow: 0px 11px 22px 0px silver;
 }
 .imgpopulaires {
     width: 137px;
@@ -312,7 +303,7 @@ button {
 }
 
 
-                   /*ACTIVITES A MARSEILLE*/ 
+                    /*ACTIVITES A MARSEILLE*/ 
 
 
 .les4imagesactivitesamarseille {
@@ -334,6 +325,7 @@ button {
     height: 440px;
     box-shadow: var(--box-shadow);
     border-radius: 0px 0px 20px 20px;
+    box-shadow: 0px 11px 22px 0px silver;
 }
 .cubedetailactivites {
     margin-left: 15px;
@@ -415,7 +407,7 @@ footer {
         display: flex;
         width: 28%;
     }
-     /*LES PLUS POPULAIRES*/
+        /*LES PLUS POPULAIRES*/
     .divetoilepopulaires {
         margin: 0;
     }
@@ -425,7 +417,7 @@ footer {
     .imgpopulaires {
         width: 106px; 
         height: 144px;
-          
+            
     }
     .imagesactivites {
         width: 182px;
@@ -444,7 +436,7 @@ footer {
 }
                                         /*MOBILE*/
 
- @media screen and (max-width: 412px) {
+    @media screen and (max-width: 412px) {
     /*HEADER*/
     body {
         margin: 0;
@@ -455,11 +447,14 @@ footer {
         align-items: center;    
     }
     .hebergementsetactivites {
-        width: 115%;
+        width: 100%;
     }
     .Hebergements, .Activites {
-        border-bottom: 1px solid white;
+        border-bottom: 2px solid white;
+        border-top: 0;
         padding-bottom: var(--header-padding-bottom);
+        width: 50%;
+        text-align: center;
     }
     .Hebergements:hover, .Activites:hover {
         border-bottom: 2px solid var(--main-blue-color);
@@ -622,3 +617,4 @@ footer {
     }
 
 } 
+
