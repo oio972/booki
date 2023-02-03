@@ -20,7 +20,7 @@ a {
 }
 
 
-                    /*HEADER*/ 
+/*HEADER*/ 
 .navigation {
     display: flex;
     justify-content: space-between;
@@ -50,7 +50,7 @@ a {
 }
 
 
-                        /*TITRE*/
+/*TITRE*/
 
 .blocseparationtitre {
     display: flex;
@@ -62,7 +62,7 @@ a {
     width: 45%;
 }
 
-                        /*FORMULAIRE*/
+/*FORMULAIRE*/
 
 .form {
     display: flex;
@@ -75,18 +75,18 @@ a {
     height: 13px;
     padding: 15px;
 }
-
 .input {
     width: auto;
-    height: 38px;
+    height: 39px;
     border: 1px solid #F2F2F2;
+    width: 15%;
 }
 button {
     border: none;
     color: white;
     background-color: var(--main-blue-color);
     border-radius: 0 15px 15px 0;
-    width: auto; 
+    width: 6%; 
     height: 42px;
     cursor: pointer;
 }
@@ -94,7 +94,7 @@ button {
     color: white;
 }
 
-                                /*FILTRES*/ 
+/*FILTRES*/ 
 .filtres {
     display: flex;
     align-items: center;
@@ -140,10 +140,10 @@ button {
 }
 #iconefiltresbleu1, #iconefiltresbleu2, #iconefiltresbleu3, #iconefiltresbleu4 {
     color: var(--main-blue-color);
-    margin: 0 10px 0 10px;
+    margin-right: 5px;
 }
 
-                        /*hebergements a marseille*/
+/*hebergements a marseille*/
 
 .flexaround {
     display: flex;
@@ -156,7 +156,7 @@ button {
     background-color: rgba(242, 242, 242, 1);
 }
 .titreHebergementsaMarseille {
-    margin-left: 20px;
+    padding: 10px 35px;
 }
 .titredelhoteletletexte {
     margin: 0 0 9px 16px;
@@ -227,24 +227,20 @@ button {
     justify-content: space-around;
     margin-top: 30px;
 }
-.cubehebergements {
-    width: 246px; 
-    height: 199px;
-    margin: 0px 0px 0px 0px; 
+.blocimagehebergements {
+    width: 30%;
 }
 .imghebergements {
     object-fit: cover;
     border: 5px solid #FFFFFF;
-    width: 246px;
+    width: 96%;
     height: 124px;
     border-radius: 20px 20px 0px 0px;
-
 }
 .afficherplus {
-    margin: 40px 0 0 70px;
+    margin: 40px 0 0 20px;
 }
-                    /*LES PLUS POPULAIRES*/
-
+/*LES PLUS POPULAIRES*/
 .sizepopulaires {
     width: 36%;
     height: 626px;            
@@ -261,6 +257,7 @@ button {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 10px 35px;
 }                  
 
 #iconelespluspopulaires {
@@ -275,51 +272,39 @@ button {
 .divetoilepopulaires3 {
     margin-top: 64px;
 }
-.blocimage7, .blocimage8 {
+.blocimage7, .blocimage8, .blocimage9 {
     background: #FFFFFF;
     border-radius: 20px; 
-    width: 343px;
+    width: 85%;
     height: 155px;
     margin-bottom: 30px;
     display: flex;
     box-shadow: 0px 11px 22px 0px silver;
 }
-.blocimage9 {
-    background: #FFFFFF;
-    border-radius: 20px; 
-    width: 343px;
-    height: 155px;
-    display: flex;
-    box-shadow: 0px 11px 22px 0px silver;
-}
 .imgpopulaires {
-    width: 137px;
+    width: 32%;
     height: 144px;
     border: 5px solid #FFFFFF;
     border-radius: 20px 0px 0px 20px;
     object-fit: cover;
 }
-
-
-                    /*ACTIVITES A MARSEILLE*/ 
-
-
+/*ACTIVITES A MARSEILLE*/ 
 .les4imagesactivitesamarseille {
     display: flex;
     justify-content: space-between;
 }
 .titreActivitesaMarseille {
-    margin: 60px 0 18.47px 0;
-    width: 212px;
+    margin: 40px 0 18.47px 0;
     height: 30px;
 }
 .imagesactivites {
-    width: 302px;
+    width: 100%;
     height: 389px;
     border-radius: 20px 20px 0 0;
     object-fit: cover;
 }
 .imagesVieux-Port, .imagesFortdepomegues, .imagesParcnationaldesCalanques, .imagesNotre-DamedelaGarde {
+    width: 20%;
     height: 440px;
     box-shadow: var(--box-shadow);
     border-radius: 20px;
@@ -329,7 +314,7 @@ button {
     margin-left: 15px;
 }
 
-                    /*FOOTER*/
+/*FOOTER*/
 footer {
     background-color: #F2F2F2;
     margin-top: 61px;
@@ -347,7 +332,7 @@ footer {
     justify-content: space-around;
     display: flex;
 }
-                    /*TABLETTE*/
+                                /*TABLETTE*/
 
 @media screen and (min-width: 951px) and (max-width: 1399px) {
 /*HEADER*/
@@ -358,9 +343,6 @@ body {
     width: 90%;
     margin: auto;
 }
-.imagebooki {
-    width: 61.09px;
-}
 .hebergementsetactivites {
     width: 30%;
 }
@@ -369,13 +351,16 @@ body {
 } 
 /*FORMULAIRE*/ 
 .input {
-    width: 28%;
+    width: 15%;
     height: 38px;
     border: 1px solid var(--main-grey-color);
 }
+.button {
+    width: 8%;
+}
 /*FILTRES*/
 .divfiltres {
-    width: 70%;
+    width: 80%;
 }
 
 /*HEBERGEMENTS A MARSEILLE*/
@@ -384,21 +369,9 @@ body {
     flex-direction: column;
 }
 .sizehebergements {
-    width: 880px;
+    width: 100%;
     height: 626px;
 }
-.sizepopulaires {
-    margin-top: 50px;
-    width: 883px;
-    height: 278px;
-
-}
-.titreeticonelespluspopulaires {
-    display: flex;
-    justify-content: space-between;
-    width: 94%;
-    margin: 0 0 20px 28px;
-}  
 .bloc3 {
     display: flex;
     flex-direction: inherit;
@@ -407,9 +380,18 @@ body {
 }
 .blocimage7, .blocimage8, .blocimage9 {
     display: flex;
-    width: 28%;
+    width: 31%;
 }
-    /*LES PLUS POPULAIRES*/
+/*LES PLUS POPULAIRES*/
+.sizepopulaires {
+    margin-top: 50px;
+    width: 100%;
+    height: 278px;
+}
+.titreeticonelespluspopulaires {
+    display: flex;
+    justify-content: space-between;
+} 
 .divetoilepopulaires {
     margin: 0;
 }
@@ -417,38 +399,37 @@ body {
     margin-top: 34px;
 }
 .imgpopulaires {
-    width: 106px; 
+    width: 37%; 
     height: 144px;
-        
-}
-.imagesactivites {
-    width: 182px;
-    height: 267px;
 }
 .afficherplus {
-    margin: 40px 0 46px 44px;
+    margin: 40px 0 46px 20px;
 }
 /*ACTIVITES A MARSEILLE*/
-.imagesVieux-Port, .imagesFortdepomegues, .imagesParcnationaldesCalanques, .imagesNotre-DamedelaGarde {
-height: 330px;
-}
-.imagesParcnationaldesCalanques, .imagesNotre-DamedelaGarde {
+.imagesParcnationaldesCalanques, .imagesNotre-DamedelaGarde, .imagesVieux-Port, .imagesFortdepomegues {
     width: 21%;
+    height: 330px;
+}
+.imagesactivites {
+    height: 267px;
 }
 }
                                     /*MOBILE*/
 
 @media screen and (max-width: 950px) {
+body {
+    width: 100%;
+    min-width: 375px;
+}
 /*HEADER*/
-
 .navigation {
     display: flex;
     flex-direction: column;
     align-items: center;    
 }
 .imagebooki {
-    width: auto;
     height: 30px;
+    width: auto;
 }
 .hebergementsetactivites {
     width: 100%;
@@ -479,26 +460,23 @@ height: 330px;
     margin-left: var(--body-margin-left)
 }
 .blocseparationtitre {
+    width: 95%;
+    margin: auto;
     height: 410px;
 }
 /*FORMULAIRE*/
-.divformulaire {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100px;
-}
 .form {
-    margin-left: var(--body-margin-left)
+    width: 85%;
+    margin-left: 10px;
+}
+.input {
+    width: 100%; 
+    height: 39px;
 }
 .label {
     width: 2%;
 }
-.input {
-    width: 75%;
-}
 .button {
-    display: flex;
     color: transparent;
     width: auto;
 }
@@ -523,6 +501,10 @@ height: 330px;
     height: 120px;
     width: auto;
 }
+.titrefiltres {
+    margin: var(--body-margin-left);
+    margin-bottom: 20px;
+}
 .economiqueetfamilial {
     display: flex;
     justify-content: space-between;
@@ -535,11 +517,10 @@ height: 330px;
 }
 .i1 {
     margin: auto;
-    width: 40%;
+    width: 39%; 
 }
-.titrefiltres {
-    margin: var(--body-margin-left);
-    margin-bottom: 20px;
+#iconefiltresbleu4 {
+    margin-right: 5px;
 }
 #icon-i {
     margin: var(--body-margin-left);
@@ -548,16 +529,19 @@ height: 330px;
     margin-left: 10px;
     width: 72%;
 }
-/*LES PLUS POPULAIRES*/
-.flexaround {
-    display: flex;
-    flex-direction: column-reverse;
+.info {
+    padding: 0px 40px;
 }
+/*LES PLUS POPULAIRES*/
 .sizepopulaires {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-radius: 0;
+    width: 100%;
+}
+.bloclespluspopulaires{
     width: 100%;
 }
 .bloc3 {
@@ -577,28 +561,41 @@ height: 330px;
 
 
 /*HEBERGEMENTS A MARSEILLE*/
+.flexaround {
+    display: flex;
+    flex-direction: column-reverse;
+}
 .sizehebergements {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
+    height: 1480px;
     background: white;
+}
+.titreHebergementsaMarseille {
+    width: 90%;
 }
 .bloc1 {
     display: flex;
     flex-direction: column;
-    margin-bottom: -30px;
-}
-.imghebergements {
-    width: 335px;
-    height: 124px;
+    align-items: center;
+    width: 100%;
 }
 .blocimagehebergements {
+    width: 85%;
     margin-bottom: 15px;
+}
+.imghebergements {
+    width: 85;
+    height: 124px;
 }
 .bloc2 {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 630px;
 }
 .afficherplus {
     display: none;
@@ -614,25 +611,32 @@ height: 330px;
 }
 .titreActivitesaMarseille {
     margin: 0;
+    width: 75%;
+    margin: auto;
 }
 .les4imagesactivitesamarseille {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-self: center;
+    align-items: center;
+    width: 100%;
+    height: 1100px;
 }
 .imagesVieux-Port, .imagesFortdepomegues, .imagesParcnationaldesCalanques, .imagesNotre-DamedelaGarde {
+    width: 85%;
     height: 250px;
 }
 .imagesactivites {
-    Width: 334px;
     height: 190px;
 }
 /*FOOTER*/
 .aproposnoshebergementsAssistance {
     display: flex;
     flex-direction: column;
-    margin-left: 30px;
+    width: 90%;
+    margin: auto;
+}
+.apropos {
+    margin: 0;
 }
 
 } 
