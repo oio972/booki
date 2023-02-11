@@ -11,7 +11,7 @@
 }
 body {
     font-family: "raleway" ,sans-serif;
-    max-width: 1440px;
+    max-width: 1400px;
     width: 90%;
     margin: auto;
 }                                   
@@ -33,7 +33,7 @@ a {
 .hebergementsetactivites {
     display: flex;
     justify-content: space-around;
-    width: 18%;
+    width: 25%;
 }
 .Hebergements, .Activites {
     border-top: 2px solid white;
@@ -86,7 +86,7 @@ button {
     color: white;
     background-color: var(--main-blue-color);
     border-radius: 0 15px 15px 0;
-    width: 6%; 
+    width: 9%; 
     height: 42px;
     cursor: pointer;
 }
@@ -102,17 +102,7 @@ button {
 .divfiltres {
     display: flex;
     justify-content: space-between;
-    width: 60%;
-}
-.economiqueetfamilial {
-    display: flex;
-    justify-content: space-around;
-    width: 50%;
-}
-.romantiqueetanimauxautorises{
-    display: flex;
-    justify-content: space-around;
-    width: 50%;
+    width: 75%;
 }
 .i1 , #i1 {
     border: 2px solid var(--main-grey-color);
@@ -142,7 +132,12 @@ button {
     color: var(--main-blue-color);
     margin-right: 5px;
 }
-
+.economiqueetfamilial, .romantiqueetanimauxautorises {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    margin: auto;
+}
 /*hebergements a marseille*/
 
 .flexaround {
@@ -155,9 +150,7 @@ button {
     border-radius: 20px;
     background-color: rgba(242, 242, 242, 1);
 }
-.titreHebergementsaMarseille {
-    padding: 10px 35px;
-}
+
 .titredelhoteletletexte {
     margin: 0 0 9px 16px;
 }
@@ -258,6 +251,7 @@ button {
     justify-content: space-between;
     align-items: center;
     padding: 10px 35px;
+    width: 81%;
 }                  
 
 #iconelespluspopulaires {
@@ -332,9 +326,9 @@ footer {
     justify-content: space-around;
     display: flex;
 }
-                                /*TABLETTE*/
+                                    /*TABLETTE*/
 
-@media screen and (min-width: 951px) and (max-width: 1399px) {
+@media screen and (max-width: 991px) {
 /*HEADER*/
 body {
     display: flex;
@@ -351,18 +345,23 @@ body {
 } 
 /*FORMULAIRE*/ 
 .input {
-    width: 15%;
+    width: 20%;
     height: 38px;
     border: 1px solid var(--main-grey-color);
 }
 .button {
-    width: 8%;
+    width: 10%;
 }
 /*FILTRES*/
 .divfiltres {
-    width: 80%;
+    width: 100%;
 }
-
+.economiqueetfamilial, .romantiqueetanimauxautorises {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    margin: auto;
+}
 /*HEBERGEMENTS A MARSEILLE*/
 .flexaround {
     display: flex;
@@ -391,6 +390,8 @@ body {
 .titreeticonelespluspopulaires {
     display: flex;
     justify-content: space-between;
+    width: 95%;
+    margin: auto;
 } 
 .divetoilepopulaires {
     margin: 0;
@@ -414,9 +415,9 @@ body {
     height: 267px;
 }
 }
-                                    /*MOBILE*/
+                                        /*MOBILE*/
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 767px) {
 body {
     width: 100%;
     min-width: 375px;
@@ -462,7 +463,7 @@ body {
 .blocseparationtitre {
     width: 95%;
     margin: auto;
-    height: 410px;
+    height: 500px;
 }
 /*FORMULAIRE*/
 .form {
@@ -501,36 +502,41 @@ body {
     height: 120px;
     width: auto;
 }
+.divtitrefiltres {
+    display: flex;
+    align-items: center;
+    height: 65px;
+}
 .titrefiltres {
     margin: var(--body-margin-left);
     margin-bottom: 20px;
 }
-.economiqueetfamilial {
+.economiqueetfamilial, .romantiqueetanimauxautorises {
     display: flex;
     justify-content: space-between;
     width: 100%;
 }
-.romantiqueetanimauxautorises {
-    display: flex;
-    justify-content: space-between;
-    width: auto;
-}
 .i1 {
     margin: auto;
-    width: 39%; 
+    width: 43%;
+}
+.Animaux {
+    letter-spacing: -1px;
 }
 #iconefiltresbleu4 {
     margin-right: 5px;
 }
-#icon-i {
-    margin: var(--body-margin-left);
-}
-.texteinformation {
-    margin-left: 10px;
-    width: 72%;
-}
 .info {
-    padding: 0px 40px;
+    display: flex;
+    align-items: center;
+    width: 91%;
+}
+.divicon-i {
+    width: 10%;
+}
+#icon-i {
+    width: 60%;
+    padding: 2px;   
 }
 /*LES PLUS POPULAIRES*/
 .sizepopulaires {
@@ -540,14 +546,19 @@ body {
     align-items: center;
     border-radius: 0;
     width: 100%;
+    height: 580px;
 }
 .bloclespluspopulaires{
     width: 100%;
+}
+.titreeticonelespluspopulaires {
+    width: 81%;
 }
 .bloc3 {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    height: 510px;
 }
 .divetoilepopulaires {
     margin-top: 55px;
@@ -555,8 +566,9 @@ body {
 .divetoilepopulaires3 {
     margin-top: 74px;
 }
-.blocimage9 {
-    margin-bottom: 30px;
+.blocimage7, .blocimage8, .blocimage9 {
+    width: 85%;
+    margin: auto;
 }
 
 
@@ -564,6 +576,7 @@ body {
 .flexaround {
     display: flex;
     flex-direction: column-reverse;
+    height: 2000px;
 }
 .sizehebergements {
     display: flex;
@@ -587,7 +600,7 @@ body {
     margin-bottom: 15px;
 }
 .imghebergements {
-    width: 85;
+    width: 85%;
     height: 124px;
 }
 .bloc2 {
@@ -608,10 +621,11 @@ body {
 .bloccardactivitesamarseille {
     display: flex;
     flex-direction: column;
+    height: 1200px;
 }
 .titreActivitesaMarseille {
     margin: 0;
-    width: 75%;
+    width: 83%;
     margin: auto;
 }
 .les4imagesactivitesamarseille {
